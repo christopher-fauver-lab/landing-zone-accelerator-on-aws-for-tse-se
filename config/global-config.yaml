@@ -1,4 +1,4 @@
-homeRegion: &HOME_REGION ca-central-1
+homeRegion: &HOME_REGION us-east-1
 enabledRegions:
   - *HOME_REGION
   # - "ap-northeast-1"
@@ -30,16 +30,16 @@ snsTopics:
   topics:
     - name: SecurityHigh
       emailAddresses:
-        - <notify-high>@example.com # <----- UPDATE EMAIL ADDRESS
+        - christopher.fauver.lab+dg-notify-high-acct@gmail.com # <----- UPDATE EMAIL ADDRESS
     - name: SecurityMedium
       emailAddresses:
-        - <notify-medium>@example.com # <----- UPDATE EMAIL ADDRESS
+        - christopher.fauver.lab+dg-notify-medium-acct@gmail.com # <----- UPDATE EMAIL ADDRESS
     - name: SecurityLow
       emailAddresses:
-        - <notify-low>@example.com # <----- UPDATE EMAIL ADDRESS
+        - christopher.fauver.lab+dg-notify-low-acct@gmail.com # <----- UPDATE EMAIL ADDRESS
     - name: SecurityIgnore
       emailAddresses:
-        - <notify-ignore>@example.com # <----- UPDATE EMAIL ADDRESS
+        - christopher.fauver.lab+dg-notify-ignore-acct@gmail.com # <----- UPDATE EMAIL ADDRESS
 controlTower:
   enable: false # UPDATE if using Control Tower, set to true
 logging:
@@ -159,25 +159,25 @@ reports:
           threshold: 100
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 90
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 75
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 50
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
     - deploymentTargets:
         accounts:
           - Perimeter
@@ -203,31 +203,31 @@ reports:
           threshold: 100
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 90
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 80
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 75
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 50
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
     - deploymentTargets:
         accounts:
           - Management
@@ -253,31 +253,31 @@ reports:
           threshold: 100
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 90
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 80
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 75
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 50
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
     - deploymentTargets:
         organizationalUnits:
           - Security
@@ -310,28 +310,28 @@ reports:
           threshold: 100
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 90
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 80
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 75
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 50
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-alert>@example.com      # <----- UPDATE EMAIL ADDRESS
+          address: christopher.fauver.lab+dg-budget-alert-acct@gmail.com      # <----- UPDATE EMAIL ADDRESS

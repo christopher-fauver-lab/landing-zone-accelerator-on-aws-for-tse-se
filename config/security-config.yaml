@@ -1,4 +1,4 @@
-homeRegion: &HOME_REGION ca-central-1
+homeRegion: &HOME_REGION us-east-1
 centralSecurityServices:
   delegatedAdminAccount: Audit
   ebsDefaultVolumeEncryption:

@@ -1,4 +1,4 @@
-homeRegion: &HOME_REGION ca-central-1
+homeRegion: &HOME_REGION us-east-1
 defaultVpc:
   delete: true
   excludeAccounts: []
@@ -145,7 +145,7 @@ centralNetworkServices:
           - Endpoint-B
         rules:
           - name: AWSAccelerator-Endpoint-mad-example-local
-            domainName: example.local      # UPDATE
+            domainName: discogoats.local       # UPDATE
             targetIps:
               - ip: 1.1.1.1
                 # port: '5353' # only include if targeting a non-standard DNS port

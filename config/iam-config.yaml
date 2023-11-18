@@ -1,4 +1,4 @@
-homeRegion: &HOME_REGION ca-central-1
+homeRegion: &HOME_REGION us-east-1
 policySets:
   - deploymentTargets:
       organizationalUnits:
@@ -79,7 +79,7 @@ managedActiveDirectories:
     type: AWS Managed Microsoft AD
     account: Operations
     region: *HOME_REGION
-    dnsName: example.local      # UPDATE
+    dnsName: discogoats.local     # UPDATE
     netBiosDomainName: example
     description: This directory is a) shared to most accounts in the organization to provide centralized Windows and Linux authentication for cloud workloads, b) used as an identity source for AWS SSO, c) used to inter-connect with on-premises directory services, and d) provides a single identities source for instance and AWS console access.
     edition: Enterprise
@@ -102,9 +102,9 @@ managedActiveDirectories:
           - Prod
           - UnClass
     logs:
-      groupName: /AWSAccelerator/MAD/example.local      # UPDATE
+      groupName: /AWSAccelerator/MAD/discogoats.local      # UPDATE
     activeDirectoryConfigurationInstance:
-      instanceType: t3.large
+      instanceType: t2.micro
       vpcName: Central
       subnetName: Central-App-A
       imagePath: /aws/service/ami-windows-latest/Windows_Server-2016-English-Full-Base
@@ -148,11 +148,11 @@ managedActiveDirectories:
         lockoutAttemptsReset: 30
       adUsers:
         - name: adconnector-user
-          email: example-adconnector-user@example.com # <----- UPDATE EMAIL ADDRESS
+          email: christopher.fauver.lab+dg-adconnector-acct@gmail.com # <----- UPDATE EMAIL ADDRESS
           groups:
             - ADConnector-grp
         - name: User1
-          email: example-user1@example.com # <----- UPDATE EMAIL ADDRESS
+          email: christopher.fauver.lab+dg-user1-acct@gmail.com # <----- UPDATE EMAIL ADDRESS
           groups:
             - aws-Provisioning
             - "*-View"
@@ -160,6 +160,6 @@ managedActiveDirectories:
             - "*-PowerUser"
             - AWS Delegated Administrators
         - name: User2
-          email: example-user2@example.com # <----- UPDATE EMAIL ADDRESS
+          email: christopher.fauver.lab+dg-user2-acct@gmail.com # <----- UPDATE EMAIL ADDRESS
           groups:
             - "*-View"
